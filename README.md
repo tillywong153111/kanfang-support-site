@@ -1,0 +1,22 @@
+# 看房笔记支持网站
+
+看房笔记的使用帮助、订阅说明、隐私政策与公开联系支持页面。纯静态 HTML 与 SVG，无依赖、脚本、表单或构建步骤。
+
+## 本地查看
+
+```sh
+python3 -m http.server 8766 --bind 127.0.0.1
+```
+
+打开 `http://127.0.0.1:8766/`，检查页面导航、隐私说明、订阅说明及联系链接。页面支持小屏、系统大字号和深浅色。
+
+## 发布
+
+源码仅保留 `main` 分支。GitHub Pages 从 `main` 的根目录直接发布，`.nojekyll` 保持静态文件原样。公开地址为：
+
+- 使用帮助：<https://tillywong153111.github.io/kanfang-support-site/#support>
+- 隐私政策：<https://tillywong153111.github.io/kanfang-support-site/#privacy>
+
+本次迁移保留原有内容、主题和订阅规则；图标改为相对路径，适配网址的项目路径。页面不使用 Cloudflare Pages，输出为仓库根目录，不需要 npm、环境变量或签名资料。
+
+修改后检查 HTML 结构、站内锚点及图标文件，实际打开手机和桌面布局，再提交并推送 `main`；以 Pages 构建成功及公开网址实际可访问为发布完成标准。
